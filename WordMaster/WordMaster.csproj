@@ -201,6 +201,14 @@
     <Compile Include="Migrations\201601081454485_MadewordRequired.Designer.cs">
       <DependentUpon>201601081454485_MadewordRequired.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201601081702031_MadeusageRequired.cs" />
+    <Compile Include="Migrations\201601081702031_MadeusageRequired.Designer.cs">
+      <DependentUpon>201601081702031_MadeusageRequired.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201601081706431_removedWordObjectAndAddedWordID.cs" />
+    <Compile Include="Migrations\201601081706431_removedWordObjectAndAddedWordID.Designer.cs">
+      <DependentUpon>201601081706431_removedWordObjectAndAddedWordID.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -300,6 +308,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201601081454485_MadewordRequired.resx">
       <DependentUpon>201601081454485_MadewordRequired.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201601081702031_MadeusageRequired.resx">
+      <DependentUpon>201601081702031_MadeusageRequired.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201601081706431_removedWordObjectAndAddedWordID.resx">
+      <DependentUpon>201601081706431_removedWordObjectAndAddedWordID.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

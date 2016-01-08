@@ -36,17 +36,21 @@ namespace WordMaster.Controllers
         }
 
         // GET: WordUsages/Create
-        public ActionResult Create(int? WordID)
+        public ActionResult Create(int? id)
         {
-            return View();
+			return View(new WordUsage()
+			{
+				WordID = (int)id
+			});
         }
 
-        // POST: WordUsages/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
+
+		// POST: WordUsages/Create
+		// To protect from overposting attacks, please enable the specific properties you want to bind to, for 
+		// more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+		[HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "WordUsageID,Usage")] WordUsage wordUsage)
+        public ActionResult Create(WordUsage wordUsage)
         {
             if (ModelState.IsValid)
             {

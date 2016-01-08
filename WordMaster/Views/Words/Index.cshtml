@@ -33,7 +33,7 @@
             @Html.ActionLink("Details", "Details", new { id=item.WordID }) |
             @Html.ActionLink("Delete", "Delete", new { id=item.WordID })
         </td>
-        @Html.ActionLink("Create Usage", "WordUsages.Create", new { id = item.WordID })
+        @Html.ActionLink("Create Usage", "../WordUsages/Create", new { id = item.WordID })
     </tr>
 }
 

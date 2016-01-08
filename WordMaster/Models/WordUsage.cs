@@ -6,8 +6,9 @@ namespace WordMaster.Models
 	{
 		public int WordUsageID { get; set; }
 
+		public int WordID { get; set; }
+
 		[Required]
-		public Word Word { get; set; }
 		public string Usage { get; set; }
 	}
 }
