@@ -5,7 +5,8 @@ using Owin;
 namespace WordMaster
 {
     public partial class Startup
-    {
+    { 
+        //sample
         public void Configuration(IAppBuilder app)
         {
             ConfigureAuth(app);
